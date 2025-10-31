@@ -9,9 +9,9 @@ float distCalc(float a, float b, float c, float d);
 
 // main function - handles the arguments
 int main(int argc, char * argv[]) {
-	if (argv[1]="-h","--help") {	//at least the user admits they're dumb.
+	if (argv[1]="-h","--help") {	// at least the user admits they're dumb.
 		printHelp(); // tell 'em how to do shit.
-		return 0; // nicely exit, because the user actualy asked for help instead of just failing miseribly.
+		return 0; // nicely exit, because the user actually asked for help instead of just failing miserably.
 	} else if (argc=4) {	// not printing help, time to actualy do work.
 		float x1,x2,y1,y2;	// make the vars.
 		x1=atof(argv[1]);	// convert the args from stings into floats so we can use them as arguments for the distcalc func.
