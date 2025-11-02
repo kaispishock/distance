@@ -2,15 +2,11 @@
 #include <stdlib.h>
 #include <math.h>
 
-// distance v0 - kaispishock
+// distance v1 - kaispishock
 
-// function prototypes
-float distCalc(float a, float b, float c, float d);
-
-// main function - handles the arguments
 int main(int argc, char * argv[]) {
 	if (argv[1]="-h","--help") {
-		printHelp();
+		printf("usage: distance [-h] [1] [2] [3] [4]"); // howto format help?
 		return 0;
 	} else if (argc=4) {
 		float x1,x2,y1,y2;	// make the vars.
@@ -18,20 +14,13 @@ int main(int argc, char * argv[]) {
 		x2=atof(argv[2]);
 		y1=atof(argv[3]);
 		y2=atof(argv[4]);
-		distCalc(x2,x1,y2,y1);	// calculate distance
+		float deltax=x2-x1; float deltay=y2-y1;	// find change in x and y
+		float awns=sqrt(powf(deltax, 2.0f)+powf(deltay, 2.0f));	// plug it into the distance formula
+		printf("%f/n", awns);	// output
 		return 0;	// exit
-	} else {
+	} else {	//error handleing for when supplied with none or more than the ammount of args needed
 		printf("Invalid number of arguments (exit code 1)/n");
-		printHelp();
+		printf("usage: distance [-h] [1] [2] [3] [4]"); // howto format help?
 		return 1;
 	}
-}
-float distCalc(float a, float b, float c, float d) { // distance calculation function.
-	float e=a-b; float f=c-d;			// incredibly cringe solution.
-	e=powf(e, 2.0f); f=powf(f, 2.0f); 	// should have to only use 4 vars for 4 numbers, but here we are.
-	printf("%f/n", sqrt(e+f));	// dumbass output
-	return 0;	// exit.
-}
-int printHelp() {
-  printf("usage: distance [-h] [1] [2] [3] [4]"); // howto format help?
 }
