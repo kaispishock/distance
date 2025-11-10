@@ -8,7 +8,7 @@ yet another cli tool, this time for solveing quadratics.
 # install directions:
 ## 1. install dependancies
 ### debian:
-install `gcc`.
+install `gcc` and `git`.
 ```sh
 sudo apt update; sudo apt install gcc git
 ```
