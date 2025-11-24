@@ -44,3 +44,4 @@ run `install.sh` as root.
 ``` sh
 sudo ./install.sh
 ```
+This will place the compiled binaries into the /usr/bin directory, allowing them to be run from the shell without having to specify the path, regardless of working directory.
