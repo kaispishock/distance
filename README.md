@@ -1,9 +1,17 @@
 a collection of small c programs that do math.
 # contents:
-## distance.c
+## Geometry
+#### distance.c
 a simple cli tool for calculateing the distance between two points. written in C.
 `distance [-h] [x1] [x2] [y1] [y2]`
-## quadratic.c
+### triangles
+#### sides2ifExists
+a simple tool that takes the sides of a triangle and determines if it exists.
+`sides2ifExists [-h] [mesurement of side 1] [mesurement of side 2] [mesurement of side 3]`
+dont't worry about the sides being in the correct order; the program automaticaly sorts them in acending order before gatting the sum of the two least angles and compareing it.
+uses the triangle inequality theorem.
+## Algebra
+### quadratic.c
 yet another cli tool, this time for solveing quadratics.
 # install directions:
 ## 1. install dependancies
