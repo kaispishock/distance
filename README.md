@@ -2,12 +2,14 @@ a collection of small c programs that do math.
 # contents:
 ## Geometry
 #### distance.c
-a simple cli tool for calculateing the distance between two points. written in C.
 `distance [-h] [x1] [x2] [y1] [y2]`
+
+a simple cli tool for calculateing the distance between two points using the distance formula.
 ### triangles
 #### sides2ifExists
-a simple tool that takes the sides of a triangle and determines if it exists.
 `sides2ifExists [-h] [mesurement of side 1] [mesurement of side 2] [mesurement of side 3]`
+
+a simple tool that takes the sides of a triangle and determines if it exists.
 dont't worry about the sides being in the correct order; the program automaticaly sorts them in acending order before gatting the sum of the two least angles and compareing it.
 uses the triangle inequality theorem.
 ## Algebra
